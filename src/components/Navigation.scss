@@ -1,0 +1,28 @@
+.nav-bar{
+    background: #3498db;
+    color:white;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+        display: inline-block;
+        margin-left: 2rem;
+        a{
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
+    .nav-links{
+        display: flex;
+        margin-right:10px;
+        align-items: center;
+        list-style: none;
+        li{
+            font-size:1.5rem;
+            font-weight: 500;
+            margin:0 22px;
+        }
+    }
+}
+
