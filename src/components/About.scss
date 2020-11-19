@@ -1,0 +1,72 @@
+.pad-container{
+    height: 100%;
+    flex:5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .pad{
+        overflow-y: auto;
+        max-height: 550px;
+        max-width: 420px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .pad-grid{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 160px;
+            height: 160px;
+            margin:6px;
+            font-weight: 300;
+            color:#111;
+            border:none;
+            border-radius: 10px;
+            transition: all 0.1s ease-in-out;
+            cursor: pointer;
+        }
+        .pad-grid:hover{
+            transform: scale(1.05);
+            color: #eee;
+        }
+    }
+
+    
+
+}
+
+.content-container{
+    flex:4;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;   
+    .content{
+        font-family: 'Rock Salt', cursive;
+        font-family: 'ZCOOL XiaoWei', serif;
+        font-size:1.5rem;
+        line-height: 2.4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 450px;
+        max-height:600px;
+        min-height: 450px;
+        background-size: 30px 30px;
+        background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
+        border: solid 0.1px black;
+        border-radius: 30px;
+        margin:0 20px;
+    }
+}
+
+@media screen and (max-width:780px){
+    .content-container{
+        justify-content: center;
+    }
+    .content{
+        margin: 0!important;
+        max-width: 90vw;
+        min-height: 90vw;
+    }
+}

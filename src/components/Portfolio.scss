@@ -1,0 +1,94 @@
+.command-line-container{
+    flex: 3;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    .command-line{
+        overflow-y: auto;
+        height: 260px;
+        width: 420px;
+        background: black;
+        padding:20px;
+        color:#fff;
+        font-family: Monaco, Menlo, 'Ubuntu Mono', Consolas, source-code-pro, monospace;
+        font-weight: 700;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        .option{
+            cursor: pointer;
+            .selected{
+                color: #f1c40f;
+            }
+        }
+    }
+}
+.panel-container{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    
+    .panel{
+        max-width: 600px;
+        .singlework-container{
+            margin-right: 15px;
+            img{
+                border:none;
+                border-radius: 10px;
+                width:420px;
+                height:250px;
+            }
+            h3{
+                padding-top:10px;
+                font-size: 1.3rem;
+                text-align: center;
+            }
+        }
+
+        .allworks-container{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            img{
+                border:#bdc3c7 solid 5px;
+                border-radius: 5px;
+                width: 200px;
+                height: 120px;
+                margin: 8px 5px;
+                padding: 15px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:780px){
+    .command-line{
+        margin-top: 15px;
+        max-width: 80vw;
+    }
+    .singlework-container{
+        margin-right: 0!important;
+        img{
+            border:none;
+            border-radius: 10px;
+            max-width:80vw;
+            max-height: 48vw;
+            min-height: 48vw;
+        }
+        h3{
+            padding-top:10px;
+            font-size: 1.3rem;
+            text-align: center;
+        }
+    }
+    .panel{
+        margin-top:20px;
+    }
+    .panel-container{
+        justify-content: center;
+    }
+    .allworks-container{
+        align-items: center;
+        justify-content: center;
+    }
+}
